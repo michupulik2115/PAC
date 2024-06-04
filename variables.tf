@@ -1,11 +1,6 @@
-variable "region" {
-  description = "The AWS region to deploy resources in"
+variable "hello_message" {
+  description = "Message to be displayed"
   type        = string
-  default     = "us-west-2"
+  default     = "Hello world"
 }
 
-variable "environment" {
-  description = "The environment for resource deployment"
-  type        = string
-  default     = "dev"
-}
