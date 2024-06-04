@@ -1,5 +1,5 @@
 
-output "bucket_name" {
-  description = "The name of the S3 bucket"
-  value       = aws_s3_bucket.example.bucket
+output "hello_output" {
+  description = "The content of the hello file"
+  value       = file("${path.module}/hello.txt")
 }

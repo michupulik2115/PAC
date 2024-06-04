@@ -1,8 +1,8 @@
-provider "aws" {
-  region = var.region
+provider "local" {
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "example-bucket-${var.environment}"
-  acl    = "private"
+resource "local_file" "hello_file" {
+  content  = var.hello_message
+  filename = "${path.module}/hello.txt"
 }
+

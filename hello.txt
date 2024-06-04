@@ -1,0 +1,1 @@
+terraform apply -var="hello_message=Hello world :D!"
